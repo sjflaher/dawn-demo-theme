@@ -1,3 +1,4 @@
+{% if section.settings.club_only == false or customer.b2b %}
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
@@ -26,7 +27,7 @@
     }
   }
 {%- endstyle -%}
-{% if section.settings.club_only == false or customer.b2b %}
+
 <div class="section-{{ section.id }}-padding">
   {%- paginate collection.products by section.settings.products_per_page -%}
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
