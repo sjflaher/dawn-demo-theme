@@ -1,4 +1,3 @@
-{% if section.settings.club_only == false or customer.b2b %}
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
@@ -182,7 +181,6 @@
     {% render 'mask-arch' %}
   {%- endif -%}
 </div>
-{% endif %}
 
 {% schema %}
 {
@@ -378,12 +376,6 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
-    },
-    {
-      "type": "checkbox",
-      "id": "club_only",
-      "default": false,
-      "label": "Club Only"
     }
   ]
 }
