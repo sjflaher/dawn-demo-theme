@@ -1,3 +1,4 @@
+{% if section.settings.custom_group == blank or customer.tags contains section.settings.custom_group %}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 
@@ -146,6 +147,7 @@
     {%- endif -%}
   </div>
 </div>
+  {% endif %}
 
 {% schema %}
 {
@@ -442,7 +444,17 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "header",
+      "content": "Personalisation"
+    },
+    {
+      "type": "text",
+      "id": "custom_group",
+      "label": "Only display to customers with tag"
     }
+
   ],
   "presets": [
     {

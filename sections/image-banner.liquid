@@ -1,3 +1,4 @@
+{% if section.settings.custom_group == blank or customer.tags contains section.settings.custom_group %}
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 
 {%- if section.settings.image_height == 'adapt' and section.settings.image != blank -%}
@@ -152,7 +153,7 @@
     </div>
   </div>
 </div>
-
+    {% endif %}
 {% schema %}
 {
   "name": "t:sections.image-banner.name",
@@ -361,6 +362,15 @@
       "id": "show_text_below",
       "default": true,
       "label": "t:sections.image-banner.settings.show_text_below.label"
+    },
+    {
+      "type": "header",
+      "content": "Personalisation"
+    },
+    {
+      "type": "text",
+      "id": "custom_group",
+      "label": "Only display to customers with tag"
     }
   ],
   "blocks": [
@@ -473,6 +483,7 @@
         }
       ]
     }
+
   ],
   "presets": [
     {
