@@ -6,32 +6,20 @@
         "template--18577974853921__1e897b71-7b6c-4fd9-b422-8985f500d825-1681380440abbbafe0-0": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "{{ article.metafields.custom.blog_description.value.short_title.value }}",
             "heading_size": "h1"
           }
         },
         "template--18577974853921__1e897b71-7b6c-4fd9-b422-8985f500d825-1681380440abbbafe0-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "template--18577974853921__1e897b71-7b6c-4fd9-b422-8985f500d825-1681380440abbbafe0-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "<p>{{ article.metafields.custom.blog_description.value.short_description | metafield_tag }}<\/p>"
           }
         }
       },
       "block_order": [
         "template--18577974853921__1e897b71-7b6c-4fd9-b422-8985f500d825-1681380440abbbafe0-0",
-        "template--18577974853921__1e897b71-7b6c-4fd9-b422-8985f500d825-1681380440abbbafe0-1",
-        "template--18577974853921__1e897b71-7b6c-4fd9-b422-8985f500d825-1681380440abbbafe0-2"
+        "template--18577974853921__1e897b71-7b6c-4fd9-b422-8985f500d825-1681380440abbbafe0-1"
       ],
       "settings": {
         "desktop_content_position": "center",
