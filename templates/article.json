@@ -108,7 +108,7 @@
         "title": "Discover their stories",
         "heading_size": "h2",
         "image_width": "third",
-        "image_ratio": "square",
+        "image_ratio": "circle",
         "columns_desktop": 2,
         "column_alignment": "center",
         "background_style": "primary",
