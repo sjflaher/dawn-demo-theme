@@ -83,8 +83,9 @@
         "template--18577974853921__d121ef46-bfbe-46ee-8f75-e3d14dbd4b84-16813823685cfa7adc-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "{{ article.metafields.custom.discover_their_story.value.image_story_two.value }}",
+            "title": "{{ article.metafields.custom.discover_their_story.value.name_two.value }}",
+            "text": "<p>{{ article.metafields.custom.discover_their_story.value.description_story_two | metafield_tag }}<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -92,8 +93,9 @@
         "template--18577974853921__d121ef46-bfbe-46ee-8f75-e3d14dbd4b84-16813823685cfa7adc-2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "{{ article.metafields.custom.discover_their_story.value.image_story_three.value }}",
+            "title": "{{ article.metafields.custom.discover_their_story.value.name_three.value }}",
+            "text": "<p>{{ article.metafields.custom.discover_their_story.value.descriptions_story_three | metafield_tag }}<\/p>",
             "link_label": "",
             "link": ""
           }
