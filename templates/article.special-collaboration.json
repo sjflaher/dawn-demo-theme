@@ -30,8 +30,43 @@
         "padding_bottom": 52
       }
     },
+    "697b1aae-8153-4248-88c6-21ab458627a6": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18617391743265__697b1aae-8153-4248-88c6-21ab458627a6-1681479504e2214da8-0": {
+          "type": "column",
+          "settings": {
+            "image": "{{ article.metafields.custom.hero_image.value }}",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18617391743265__697b1aae-8153-4248-88c6-21ab458627a6-1681479504e2214da8-0"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "fd9e0025-1f11-4a73-8213-5c19ba151879": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h2",
@@ -89,9 +124,9 @@
         "template--18577974853921__e8845fad-7f55-4e26-86b6-034cbf0bcbab-16814660708461d47a-0": {
           "type": "column",
           "settings": {
-            "image": "{{ article.metafields.custom.discover_their_story.value.image_story_one.value }}",
-            "title": "{{ article.metafields.custom.discover_their_story.value.name_one.value }}",
-            "text": "<p>{{ article.metafields.custom.discover_their_story.value.description_story_one | metafield_tag }}<\/p>",
+            "image": "{{ article.metafields.custom.image_example.value.image_example_1.value }}",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -99,9 +134,9 @@
         "template--18577974853921__e8845fad-7f55-4e26-86b6-034cbf0bcbab-16814660708461d47a-1": {
           "type": "column",
           "settings": {
-            "image": "{{ article.metafields.custom.discover_their_story.value.image_story_two.value }}",
-            "title": "{{ article.metafields.custom.discover_their_story.value.name_two.value }}",
-            "text": "<p>{{ article.metafields.custom.discover_their_story.value.description_story_two | metafield_tag }}<\/p>",
+            "image": "{{ article.metafields.custom.image_example.value.image_example_2.value }}",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -109,9 +144,9 @@
         "template--18577974853921__e8845fad-7f55-4e26-86b6-034cbf0bcbab-16814660708461d47a-2": {
           "type": "column",
           "settings": {
-            "image": "{{ article.metafields.custom.discover_their_story.value.image_story_three.value }}",
-            "title": "{{ article.metafields.custom.discover_their_story.value.name_three.value }}",
-            "text": "<p>{{ article.metafields.custom.discover_their_story.value.descriptions_story_three | metafield_tag }}<\/p>",
+            "image": "{{ article.metafields.custom.image_example.value.image_example_3.value }}",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -123,7 +158,7 @@
         "template--18577974853921__e8845fad-7f55-4e26-86b6-034cbf0bcbab-16814660708461d47a-2"
       ],
       "settings": {
-        "title": "{{ article.metafields.custom.discover_their_story.value.title.value }}",
+        "title": "{{ article.metafields.custom.image_example.value.title_collaboration.value }}",
         "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -138,33 +173,13 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "66689775-7ef7-4c85-b451-1654631c2607": {
-      "type": "image-banner",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "image": "{{ article.metafields.custom.hero_image.value }}",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "left",
-        "color_scheme": "background-1",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true,
-        "custom_group": ""
-      }
     }
   },
   "order": [
     "1e897b71-7b6c-4fd9-b422-8985f500d825",
+    "697b1aae-8153-4248-88c6-21ab458627a6",
     "fd9e0025-1f11-4a73-8213-5c19ba151879",
     "main",
-    "e8845fad-7f55-4e26-86b6-034cbf0bcbab",
-    "66689775-7ef7-4c85-b451-1654631c2607"
+    "e8845fad-7f55-4e26-86b6-034cbf0bcbab"
   ]
 }
