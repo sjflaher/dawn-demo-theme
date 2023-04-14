@@ -1,4 +1,21 @@
-{% if customer %}
+{% assign reference_product = blank %}
+{% assign look_ok = true %}
+
+{% if section.settings.primary_product == "cart" and cart.empty? == false %}
+  {% assign reference_product = cart.items[0].product %}
+{% elsif section.settings.primary_product == "last_order" and customer.last_order != blank %}
+  {% assign reference_product = customer.last_order.line_items[0].product %}
+{% elsif section.settings.secondary_product == "cart" and cart.empty? == false %}
+  {% assign reference_product = cart.items[0].product %}
+{% elsif section.settings.secondary_product == "last_order" and customer.last_order != blank %}
+  {% assign reference_product = customer.last_order.line_items[0].product %}
+{% endif %}
+
+{% if section.settings.recomendation_type == "complete_the_look" and reference_product.metafields.related_products.complete_the_look == blank %}
+  {% assign look_ok = false %}
+{% endif %}
+
+{% if reference_product != blank and look_ok %}
   {{ 'component-card.css' | asset_url | stylesheet_tag }}
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
   {{ 'section-related-products.css' | asset_url | stylesheet_tag }}
@@ -26,26 +43,46 @@
   {%- endstyle -%}
 
   <div class="color-{{ section.settings.color_scheme }} gradient no-js-hidden{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    <product-recommendations class="related-products page-width section-{{ section.id }}-padding isolate" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ last_product.id }}&limit={{ section.settings.products_to_show }}">
-      {% if recommendations.performed and recommendations.products_count > 0 %}
-        <h2 class="related-products__heading {{ section.settings.heading_size }}">
-          {{ section.settings.heading }}
-        </h2>
-        <ul class="grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down" role="list">
-          {% for recommendation in recommendations.products %}
-            <li class="grid__item">
-              {% render 'card-product'
-               , card_product: recommendation,
-               media_aspect_ratio: section.settings.image_ratio,
-               image_shape: section.settings.image_shape,
-               show_secondary_image: section.settings.show_secondary_image,
-               show_vendor: section.settings.show_vendor,
-               show_rating: section.settings.show_rating %}
-            </li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    </product-recommendations>
+    {% if section.settings.recomendation_type == "complete_the_look" %}
+      <h2 class="related-products__heading {{ section.settings.heading_size }}">
+        {{ section.settings.heading }}
+      </h2>
+      <ul class="grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down" role="list">
+        {% for recommendation in reference_product.metafields.related_products.complete_the_look.value %}
+          <li class="grid__item">
+            {% render 'card-product'
+             , card_product: recommendation,
+             media_aspect_ratio: section.settings.image_ratio,
+             image_shape: section.settings.image_shape,
+             show_secondary_image: section.settings.show_secondary_image,
+             show_vendor: section.settings.show_vendor,
+             show_rating: section.settings.show_rating %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <product-recommendations class="related-products page-width section-{{ section.id }}-padding isolate" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ reference_product.id }}&limit={{ section.settings.products_to_show }}&intent={{ section.settings.recomendation_type }}">
+        {% if recommendations.performed and recommendations.products_count > 0 %}
+          <h2 class="related-products__heading {{ section.settings.heading_size }}">
+            {{ section.settings.heading }}
+          </h2>
+          <ul class="grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down" role="list">
+            {% for recommendation in recommendations.products %}
+              <li class="grid__item">
+                {% render 'card-product'
+                 , card_product: recommendation,
+                 media_aspect_ratio: section.settings.image_ratio,
+                 image_shape: section.settings.image_shape,
+                 show_secondary_image: section.settings.show_secondary_image,
+                 show_vendor: section.settings.show_vendor,
+                 show_rating: section.settings.show_rating %}
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </product-recommendations>
+    {% endif %}
+
     {% if section.settings.image_shape == 'arch' %}
       {% render 'mask-arch' %}
     {%- endif -%}
@@ -54,7 +91,7 @@
 
 {% schema %}
   {
-    "name": "Prev Order Recomendation",
+    "name": "Custom Recomendation",
     "tag": "section",
     "class": "section",
     "settings": [
@@ -239,11 +276,63 @@
         "unit": "px",
         "label": "t:sections.all.padding.padding_bottom",
         "default": 36
+      }, {
+        "type": "header",
+        "content": "Base Recomendtion on"
+      }, {
+        "type": "select",
+        "id": "primary_product",
+        "default": "cart",
+        "label": "Primary Reference Product",
+        "options": [
+          {
+            "value": "cart",
+            "label": "Cart"
+          }, {
+            "value": "last_order",
+            "label": "Last Order"
+          }
+        ]
+      }, {
+        "type": "select",
+        "id": "secondary_product",
+        "default": "none",
+        "label": "Secondary Reference Product",
+        "options": [
+          {
+            "value": "cart",
+            "label": "Cart"
+          }, {
+            "value": "last_order",
+            "label": "Last Order"
+          }, {
+            "value": "none",
+            "label": "None"
+          }
+        ]
+      }, {
+        "type": "select",
+        "id": "recomendation_type",
+        "default": "related",
+        "label": "Recomendation Type",
+        "info": "Specify the type of recomendation you'd like to give",
+        "options": [
+          {
+            "value": "complete_the_look",
+            "label": "Complete the Look"
+          }, {
+            "value": "related",
+            "label": "Related"
+          }, {
+            "value": "complementary",
+            "label": "Complementary"
+          }
+        ]
       }
     ],
     "presets": [
       {
-        "name": "Previous Order Recomendation"
+        "name": "Custom Recomendation"
       }
     ]
   }
