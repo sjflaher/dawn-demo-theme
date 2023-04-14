@@ -36,7 +36,7 @@
         "heading": "",
         "heading_size": "h2",
         "enable_video_looping": true,
-        "video": "shopify:\/\/files\/videos\/Video.mp4",
+        "video": "{{ article.metafields.custom.hero_video.value }}",
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": true,
