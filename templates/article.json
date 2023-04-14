@@ -1,5 +1,35 @@
 {
   "sections": {
+    "1e897b71-7b6c-4fd9-b422-8985f500d825": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18577974853921__1e897b71-7b6c-4fd9-b422-8985f500d825-1681380440abbbafe0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ article.metafields.custom.blog_description.value.short_title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "template--18577974853921__1e897b71-7b6c-4fd9-b422-8985f500d825-1681380440abbbafe0-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ article.metafields.custom.blog_description.value.short_description | metafield_tag }}<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18577974853921__1e897b71-7b6c-4fd9-b422-8985f500d825-1681380440abbbafe0-0",
+        "template--18577974853921__1e897b71-7b6c-4fd9-b422-8985f500d825-1681380440abbbafe0-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "main": {
       "type": "main-article",
       "blocks": {
@@ -23,7 +53,9 @@
           }
         },
         "content": {
-          "type": "content"
+          "type": "content",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -31,10 +63,30 @@
         "title",
         "share",
         "content"
-      ]
+      ],
+      "settings": {
+      }
+    },
+    "66689775-7ef7-4c85-b451-1654631c2607": {
+      "type": "image-banner",
+      "settings": {
+        "image": "{{ article.metafields.custom.hero_image.value }}",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
-    "main"
+    "1e897b71-7b6c-4fd9-b422-8985f500d825",
+    "main",
+    "66689775-7ef7-4c85-b451-1654631c2607"
   ]
 }
