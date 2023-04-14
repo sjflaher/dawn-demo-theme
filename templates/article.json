@@ -124,7 +124,7 @@
       ],
       "settings": {
         "title": "{{ article.metafields.custom.discover_their_story.value.title.value }}",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
