@@ -133,6 +133,13 @@
               >
                 {{- 'products.product.on_sale' | t -}}
               </span>
+              {%- elsif card_product.tags contains custom_badge_tag -%}
+                <span
+                  id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+                  class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
+                >
+                  {{ custom_badge_text }}
+                </span>
             {%- endif -%}
           </div>
         </div>
@@ -330,6 +337,13 @@
             >
               {{- 'products.product.on_sale' | t -}}
             </span>
+            {%- elsif card_product.tags contains custom_badge_tag -%}
+              <span
+                id="Badge-{{ section_id }}-{{ card_product.id }}"
+                class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
+              >
+                {{ custom_badge_text }}
+              </span>
           {%- endif -%}
         </div>
       </div>

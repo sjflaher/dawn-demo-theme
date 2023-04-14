@@ -153,7 +153,7 @@
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
-                <li class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" data-cascade>
+                <li class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}{% if product.tags contains section.settings.boost_tag %} display_first{% endif %}" data-cascade>
                   {% render 'card-product',
                     card_product: product,
                     media_aspect_ratio: section.settings.image_ratio,
@@ -163,7 +163,9 @@
                     show_rating: section.settings.show_rating,
                     lazy_load: lazy_load,
                     show_quick_add: section.settings.enable_quick_add,
-                    section_id: section.id
+                    section_id: section.id,
+                    custom_badge_tag: section.settings.custom_badge_tag,
+                    custom_badge_text: section.settings.custom_badge_text
                   %}
                 </li>
               {%- endfor -%}
@@ -376,6 +378,27 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "header",
+      "content": "Customisation and personalisation"
+    },
+    {
+      "type": "text",
+      "id": "boost_tag",
+      "label": "Boost products via tag",
+      "info": "Products with this tag can be displayed first"
+    },
+    {
+      "type": "text",
+      "id": "custom_badge_text",
+      "label": "Text for custom badges"
+    },
+    {
+      "type": "text",
+      "id": "custom_badge_tag",
+      "label": "Product tag to display badges on",
+      "info": "Products with this tag will display the custom badge"
     }
   ]
 }

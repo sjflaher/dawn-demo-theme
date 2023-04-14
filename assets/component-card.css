@@ -446,3 +446,7 @@
     clip-path: polygon(var(--shape--blob-5));
   }
 }
+
+.grid__item.display_first{
+  order: -1;
+}
