@@ -30,6 +30,21 @@
         "padding_bottom": 52
       }
     },
+    "fd9e0025-1f11-4a73-8213-5c19ba151879": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "enable_video_looping": true,
+        "video": "shopify:\/\/files\/videos\/Video.mp4",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "main": {
       "type": "main-article",
       "blocks": {
@@ -115,7 +130,7 @@
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "Discover more",
         "button_link": "",
         "color_scheme": "background-1",
         "columns_mobile": "1",
@@ -126,8 +141,11 @@
     },
     "66689775-7ef7-4c85-b451-1654631c2607": {
       "type": "image-banner",
+      "custom_css": [
+
+      ],
       "settings": {
-        "image": "{{ article.metafields.custom.hero_image.value }}",
+        "image": "shopify:\/\/shop_images\/acqua-for-life-mosaic.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -144,6 +162,7 @@
   },
   "order": [
     "1e897b71-7b6c-4fd9-b422-8985f500d825",
+    "fd9e0025-1f11-4a73-8213-5c19ba151879",
     "main",
     "e8845fad-7f55-4e26-86b6-034cbf0bcbab",
     "66689775-7ef7-4c85-b451-1654631c2607"
