@@ -1,5 +1,54 @@
 {
   "sections": {
+    "dbca4818-2b94-41eb-8692-a1ade41f3fdb": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18577974952225__dbca4818-2b94-41eb-8692-a1ade41f3fdb-1681750639699245ec-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "30% OFF on the sneaker collection!",
+            "heading_size": "h1"
+          }
+        },
+        "template--18577974952225__dbca4818-2b94-41eb-8692-a1ade41f3fdb-1681750639699245ec-1": {
+          "type": "text",
+          "settings": {
+            "text": "Use 30OFF code",
+            "text_style": "body"
+          }
+        },
+        "template--18577974952225__dbca4818-2b94-41eb-8692-a1ade41f3fdb-1681750639699245ec-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop the collection",
+            "button_link_1": "shopify:\/\/collections\/sneakers",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18577974952225__dbca4818-2b94-41eb-8692-a1ade41f3fdb-1681750639699245ec-0",
+        "template--18577974952225__dbca4818-2b94-41eb-8692-a1ade41f3fdb-1681750639699245ec-1",
+        "template--18577974952225__dbca4818-2b94-41eb-8692-a1ade41f3fdb-1681750639699245ec-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/GA6.2.1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "custom_group": ""
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -13,7 +62,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "Be the first to shop our new product collection and get exclusive early access as a VIP customer! Use code 30OFF to get 30% discount on previous collection",
+            "text": "Be the first to shop our new product collection and get exclusive early access as a VIP customer!",
             "text_style": "body"
           }
         },
@@ -23,7 +72,7 @@
             "button_label_1": "Discover VIP content",
             "button_link_1": "shopify:\/\/collections\/vip-collection-2023",
             "button_style_secondary_1": true,
-            "button_label_2": "All Jackets collection",
+            "button_label_2": "",
             "button_link_2": "shopify:\/\/collections\/jackets",
             "button_style_secondary_2": true
           }
@@ -40,7 +89,7 @@
         "image_height": "small",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
-        "desktop_content_alignment": "left",
+        "desktop_content_alignment": "center",
         "color_scheme": "background-1",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
@@ -237,6 +286,7 @@
     }
   },
   "order": [
+    "dbca4818-2b94-41eb-8692-a1ade41f3fdb",
     "image_banner",
     "featured_collection",
     "rich_text",
