@@ -170,39 +170,52 @@
             "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "shopify:\/\/products\/shop-the-look-css23"
           }
         },
         "template--18649487966497__5a08c16c-4fd3-486a-848b-10e9d1b8b714-1681734760a4f7d7b7-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/GA5.5.jpg",
+            "title": "",
+            "text": "",
             "link_label": "",
-            "link": ""
+            "link": "shopify:\/\/products\/shop-the-look-css23-1"
           }
         },
         "template--18649487966497__5a08c16c-4fd3-486a-848b-10e9d1b8b714-1681734760a4f7d7b7-2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/GA5.7.jpg",
+            "title": "",
+            "text": "",
             "link_label": "",
-            "link": ""
+            "link": "shopify:\/\/products\/shop-the-look-css23-3"
+          }
+        },
+        "52295e0e-ecb0-4477-9562-b8e89d85f90a": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/GA5.6.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/products\/shop-the-look-css23-2"
           }
         }
       },
       "block_order": [
         "template--18649487966497__5a08c16c-4fd3-486a-848b-10e9d1b8b714-1681734760a4f7d7b7-0",
         "template--18649487966497__5a08c16c-4fd3-486a-848b-10e9d1b8b714-1681734760a4f7d7b7-1",
-        "template--18649487966497__5a08c16c-4fd3-486a-848b-10e9d1b8b714-1681734760a4f7d7b7-2"
+        "template--18649487966497__5a08c16c-4fd3-486a-848b-10e9d1b8b714-1681734760a4f7d7b7-2",
+        "52295e0e-ecb0-4477-9562-b8e89d85f90a"
       ],
       "settings": {
         "title": "Shop the looks",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "primary",
         "button_label": "Button label",
