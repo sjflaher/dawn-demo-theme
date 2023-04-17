@@ -125,6 +125,7 @@
     },
     "image-with-text": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "image-with-text-0": {
           "type": "heading",
@@ -157,6 +158,78 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "5a08c16c-4fd3-486a-848b-10e9d1b8b714": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18649487966497__5a08c16c-4fd3-486a-848b-10e9d1b8b714-1681734760a4f7d7b7-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/GA5.1.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--18649487966497__5a08c16c-4fd3-486a-848b-10e9d1b8b714-1681734760a4f7d7b7-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--18649487966497__5a08c16c-4fd3-486a-848b-10e9d1b8b714-1681734760a4f7d7b7-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18649487966497__5a08c16c-4fd3-486a-848b-10e9d1b8b714-1681734760a4f7d7b7-0",
+        "template--18649487966497__5a08c16c-4fd3-486a-848b-10e9d1b8b714-1681734760a4f7d7b7-1",
+        "template--18649487966497__5a08c16c-4fd3-486a-848b-10e9d1b8b714-1681734760a4f7d7b7-2"
+      ],
+      "settings": {
+        "title": "Shop the looks",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
       }
     },
     "multicolumn": {
@@ -201,30 +274,13 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "heading": "Shop other looks",
-        "heading_size": "h2",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "color_scheme": "background-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 28
-      }
     }
   },
   "order": [
     "main",
     "image-with-text",
-    "multicolumn",
-    "related-products"
+    "5a08c16c-4fd3-486a-848b-10e9d1b8b714",
+    "related-products",
+    "multicolumn"
   ]
 }
