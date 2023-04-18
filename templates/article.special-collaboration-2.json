@@ -1,0 +1,170 @@
+{
+  "sections": {
+    "1e897b71-7b6c-4fd9-b422-8985f500d825": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18577974853921__1e897b71-7b6c-4fd9-b422-8985f500d825-1681380440abbbafe0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ article.metafields.custom.blog_description.value.short_title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "template--18577974853921__1e897b71-7b6c-4fd9-b422-8985f500d825-1681380440abbbafe0-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ article.metafields.custom.blog_description.value.short_description | metafield_tag }}<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18577974853921__1e897b71-7b6c-4fd9-b422-8985f500d825-1681380440abbbafe0-0",
+        "template--18577974853921__1e897b71-7b6c-4fd9-b422-8985f500d825-1681380440abbbafe0-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "fd9e0025-1f11-4a73-8213-5c19ba151879": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "enable_video_looping": true,
+        "video": "{{ article.metafields.custom.hero_video.value }}",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "disabled": true,
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "title",
+        "share",
+        "content"
+      ],
+      "settings": {
+      }
+    },
+    "e8845fad-7f55-4e26-86b6-034cbf0bcbab": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18577974853921__e8845fad-7f55-4e26-86b6-034cbf0bcbab-16814660708461d47a-0": {
+          "type": "column",
+          "settings": {
+            "image": "{{ article.metafields.custom.discover_their_story.value.image_story_one.value }}",
+            "title": "{{ article.metafields.custom.discover_their_story.value.name_one.value }}",
+            "text": "<p>{{ article.metafields.custom.discover_their_story.value.description_story_one | metafield_tag }}<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--18577974853921__e8845fad-7f55-4e26-86b6-034cbf0bcbab-16814660708461d47a-1": {
+          "type": "column",
+          "settings": {
+            "image": "{{ article.metafields.custom.discover_their_story.value.image_story_two.value }}",
+            "title": "{{ article.metafields.custom.discover_their_story.value.name_two.value }}",
+            "text": "<p>{{ article.metafields.custom.discover_their_story.value.description_story_two | metafield_tag }}<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--18577974853921__e8845fad-7f55-4e26-86b6-034cbf0bcbab-16814660708461d47a-2": {
+          "type": "column",
+          "settings": {
+            "image": "{{ article.metafields.custom.discover_their_story.value.image_story_three.value }}",
+            "title": "{{ article.metafields.custom.discover_their_story.value.name_three.value }}",
+            "text": "<p>{{ article.metafields.custom.discover_their_story.value.descriptions_story_three | metafield_tag }}<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18577974853921__e8845fad-7f55-4e26-86b6-034cbf0bcbab-16814660708461d47a-0",
+        "template--18577974853921__e8845fad-7f55-4e26-86b6-034cbf0bcbab-16814660708461d47a-1",
+        "template--18577974853921__e8845fad-7f55-4e26-86b6-034cbf0bcbab-16814660708461d47a-2"
+      ],
+      "settings": {
+        "title": "{{ article.metafields.custom.discover_their_story.value.title.value }}",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Discover more",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "66689775-7ef7-4c85-b451-1654631c2607": {
+      "type": "image-banner",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "image": "{{ article.metafields.custom.hero_image.value }}",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "custom_group": ""
+      }
+    }
+  },
+  "order": [
+    "1e897b71-7b6c-4fd9-b422-8985f500d825",
+    "fd9e0025-1f11-4a73-8213-5c19ba151879",
+    "main",
+    "e8845fad-7f55-4e26-86b6-034cbf0bcbab",
+    "66689775-7ef7-4c85-b451-1654631c2607"
+  ]
+}
