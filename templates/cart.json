@@ -61,7 +61,7 @@
     "6bd4e9d4-c776-4aad-87aa-46b288a51758": {
       "type": "custom-recomendations",
       "settings": {
-        "heading": "You may also like",
+        "heading": "Complete the look",
         "heading_size": "h1",
         "products_to_show": 4,
         "columns_desktop": 4,
@@ -76,7 +76,7 @@
         "padding_bottom": 36,
         "primary_product": "cart",
         "secondary_product": "last_order",
-        "recomendation_type": "related"
+        "recomendation_type": "complete_the_look"
       }
     }
   },
