@@ -125,8 +125,9 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
-    "checkout_logo_image": "shopify:\/\/shop_images\/ww_checkout_logo.png",
-    "checkout_logo_size": "small",
+    "checkout_logo_image": "shopify:\/\/shop_images\/ww_checkout_logo_ea63f4a4-cf83-4e7e-b512-473a87b093ee.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "large",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
