@@ -60,65 +60,10 @@
         "padding_bottom": 100,
         "club_only": false
       }
-    },
-    "7362dd6c-1cc1-4a86-9fb1-675e771ad5f3": {
-      "type": "featured-product",
-      "blocks": {
-        "template--18570756849981__7362dd6c-1cc1-4a86-9fb1-675e771ad5f3-16818245187c41425d-1": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h2"
-          }
-        },
-        "template--18570756849981__7362dd6c-1cc1-4a86-9fb1-675e771ad5f3-16818245187c41425d-2": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "template--18570756849981__7362dd6c-1cc1-4a86-9fb1-675e771ad5f3-16818245187c41425d-3": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "template--18570756849981__7362dd6c-1cc1-4a86-9fb1-675e771ad5f3-16818245187c41425d-4": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "template--18570756849981__7362dd6c-1cc1-4a86-9fb1-675e771ad5f3-16818245187c41425d-5": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        }
-      },
-      "block_order": [
-        "template--18570756849981__7362dd6c-1cc1-4a86-9fb1-675e771ad5f3-16818245187c41425d-1",
-        "template--18570756849981__7362dd6c-1cc1-4a86-9fb1-675e771ad5f3-16818245187c41425d-2",
-        "template--18570756849981__7362dd6c-1cc1-4a86-9fb1-675e771ad5f3-16818245187c41425d-3",
-        "template--18570756849981__7362dd6c-1cc1-4a86-9fb1-675e771ad5f3-16818245187c41425d-4",
-        "template--18570756849981__7362dd6c-1cc1-4a86-9fb1-675e771ad5f3-16818245187c41425d-5"
-      ],
-      "settings": {
-        "product": "holz-armlehnstuhl-angelina-mit-sitzpolster-creme-dunkles-eschenholz",
-        "color_scheme": "background-1",
-        "secondary_background": true,
-        "media_size": "medium",
-        "constrain_to_viewport": true,
-        "media_fit": "cover",
-        "media_position": "left",
-        "image_zoom": "hover",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 32,
-        "padding_bottom": 20
-      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection",
-    "7362dd6c-1cc1-4a86-9fb1-675e771ad5f3"
+    "featured_collection"
   ]
 }
