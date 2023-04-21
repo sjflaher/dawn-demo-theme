@@ -280,8 +280,8 @@
         "padding_top": 36,
         "padding_bottom": 36,
         "primary_product": "cart",
-        "secondary_product": "none",
-        "recomendation_type": "related"
+        "secondary_product": "last_order",
+        "recomendation_type": "complete_the_look"
       }
     }
   },
