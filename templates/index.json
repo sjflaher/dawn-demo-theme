@@ -46,7 +46,7 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true,
-        "custom_group": ""
+        "custom_group": "VIP"
       }
     },
     "image_banner": {
@@ -95,7 +95,7 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false,
-        "custom_group": ""
+        "custom_group": "VIP"
       }
     },
     "featured_collection": {
