@@ -76,7 +76,7 @@
         "padding_bottom": 36,
         "primary_product": "cart",
         "secondary_product": "last_order",
-        "recomendation_type": "complementary"
+        "recomendation_type": "related"
       }
     }
   },
