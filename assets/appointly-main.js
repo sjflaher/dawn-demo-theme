@@ -1625,7 +1625,7 @@ form #apntly-book-button ~ .shopify-payment-button {
     addToCartSelector: "",
     bookingButtonContainer: "",
     widgetSettings: {
-      text: 'SCHEDULE YOUR TIME'
+      text: 'Reserve in Store'
     },
     floatWidgetSettings: {"text":"BOOK APPOINTMENT","isEnabled":false,"textColor":"#ffffff","onClickAction":1,"backgroundColor":"#AF4B4B"},
     bookingInfoSettings: {"dateText":"Date","timeText":"Time","teamMemberText":"Employee","bookingTimeText":"Booking"},
