@@ -3310,3 +3310,13 @@ details-disclosure > details {
     }
   }
 }
+
+/* CUstom CSS */
+h2 {
+  letter-spacing: 4px !important;
+}
+
+.button_container {
+  display: flex;
+  gap: 6px;
+}
