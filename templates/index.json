@@ -350,7 +350,89 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/6422b1f1b8933700091859a1.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "large",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "custom_group": ""
+      }
+    },
+    "8d3ccd91-126e-4da3-802a-0a373c794dad": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18577974952225__8d3ccd91-126e-4da3-802a-0a373c794dad-1682319697ec6983aa-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "MEN'S SPRING SUMMER 2023 COLLECTION",
+            "heading_size": "h1"
+          }
+        },
+        "template--18577974952225__8d3ccd91-126e-4da3-802a-0a373c794dad-1682319697ec6983aa-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Discover More",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18577974952225__8d3ccd91-126e-4da3-802a-0a373c794dad-1682319697ec6983aa-0",
+        "template--18577974952225__8d3ccd91-126e-4da3-802a-0a373c794dad-1682319697ec6983aa-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/6422b1f2d9f9cb000c1c914a.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "custom_group": ""
+      }
+    },
+    "9b8e580d-9bd8-4ddf-83a3-fdafa2e462a4": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18577974952225__9b8e580d-9bd8-4ddf-83a3-fdafa2e462a4-1682319697ec6983aa-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "GIORGIO ARMANI 10 CORSO COMO",
+            "heading_size": "h1"
+          }
+        },
+        "template--18577974952225__9b8e580d-9bd8-4ddf-83a3-fdafa2e462a4-1682319697ec6983aa-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Discover More",
+            "button_link_1": "shopify:\/\/collections",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18577974952225__9b8e580d-9bd8-4ddf-83a3-fdafa2e462a4-1682319697ec6983aa-0",
+        "template--18577974952225__9b8e580d-9bd8-4ddf-83a3-fdafa2e462a4-1682319697ec6983aa-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/63f7229f677916000ce8834c.jpg",
+        "image_overlay_opacity": 30,
+        "image_height": "large",
         "desktop_content_position": "bottom-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
@@ -373,6 +455,8 @@
     "multicolumn",
     "055bac4e-9c3f-4420-9ce0-f00273c0c8d1",
     "5b9b27e1-28a0-4b26-b5c5-e00886961ce3",
-    "31e44111-df43-4d9e-abd3-0b3bf03cb7f7"
+    "31e44111-df43-4d9e-abd3-0b3bf03cb7f7",
+    "8d3ccd91-126e-4da3-802a-0a373c794dad",
+    "9b8e580d-9bd8-4ddf-83a3-fdafa2e462a4"
   ]
 }
