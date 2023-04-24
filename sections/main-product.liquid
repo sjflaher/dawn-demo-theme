@@ -438,7 +438,7 @@
                 grid--1-col-desktop
               ">
                 {% for subproduct in product.metafields.related_products.complete_the_look.value %}
-                    <li class="grid__item>
+                    <li class="grid__item">
                       {% render 'card-product',
                       card_product: subproduct,
                       media_aspect_ratio: block.settings.image_ratio,
@@ -446,13 +446,57 @@
                       show_secondary_image: block.settings.show_secondary_image,
                       show_vendor: block.settings.show_vendor,
                       show_rating: block.settings.show_rating,
-                      lazy_load: lazy_load,
+                      lazy_load: true,
                       show_quick_add: block.settings.enable_quick_add,
                       section_id: block.id
                     %}
                     </li>
                   {% endfor %}
                   </ul>
+                  <button class="button button--secondary add_all">Add All</button>
+
+                  <script>
+                      //Adding event listner to Add To Cart Button
+                      document.querySelector(".add_all").addEventListener("click", addBundle);
+                      //Adding event listner to Add To Cart Button
+                      function addBundle(){
+                          //Create variable with Bundle product details
+                          //const bundleVarients = JSON.parse('{{bundlePayload}}').content
+                          //Create empty request body for Cart API Request
+                          let formData = {
+                            'items': [{
+                             'id': 8217952616737,
+                             'quantity': 2
+                             }]
+                           };
+
+
+                          //Loop through Bundle product details to populate cart request body
+                         /* for(i=0; i < bundleVarients.length; i++){
+                          let item = {'id':bundleVarients[i],'quantity':1 };
+                          formData.items.push(item);
+                          }*/
+
+                          //Send "Add to Cart" request via Cart API
+                          fetch(window.Shopify.routes.root + 'cart/add.js', {
+                              method: 'POST',
+                              headers: {
+                                  'Content-Type': 'application/json'
+                              },
+                              body: JSON.stringify(formData)
+                              })
+                              .then(response => {
+                                  if(response.ok){
+                                      //If Cart API request successful, redirect to cart page
+                                      window.location.href = "/cart";
+                                  }
+                                  return response.json();
+                              })
+                              .catch((error) => {
+                                  console.error('Error:', error);
+                              });
+                      };
+                  </script>
           {%- endcase -%}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
