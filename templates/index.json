@@ -38,7 +38,7 @@
         "image": "shopify:\/\/shop_images\/GA6.2.1.jpg",
         "image_overlay_opacity": 0,
         "image_height": "small",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
@@ -283,6 +283,43 @@
         "secondary_product": "last_order",
         "recomendation_type": "complete_the_look"
       }
+    },
+    "5b9b27e1-28a0-4b26-b5c5-e00886961ce3": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18577974952225__5b9b27e1-28a0-4b26-b5c5-e00886961ce3-168231493266db891b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "DISCOVER THE COLLECTION",
+            "heading_size": "h2"
+          }
+        },
+        "template--18577974952225__5b9b27e1-28a0-4b26-b5c5-e00886961ce3-168231493266db891b-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "For Her",
+            "button_link": "shopify:\/\/collections\/blazer"
+          }
+        }
+      },
+      "block_order": [
+        "template--18577974952225__5b9b27e1-28a0-4b26-b5c5-e00886961ce3-168231493266db891b-0",
+        "template--18577974952225__5b9b27e1-28a0-4b26-b5c5-e00886961ce3-168231493266db891b-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/w1920.webp",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -293,6 +330,7 @@
     "collage",
     "video",
     "multicolumn",
-    "055bac4e-9c3f-4420-9ce0-f00273c0c8d1"
+    "055bac4e-9c3f-4420-9ce0-f00273c0c8d1",
+    "5b9b27e1-28a0-4b26-b5c5-e00886961ce3"
   ]
 }
