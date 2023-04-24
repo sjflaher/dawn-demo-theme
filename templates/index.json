@@ -7,7 +7,7 @@
           "type": "heading",
           "settings": {
             "heading": "30% OFF on the sneaker collection and free delivery!",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "template--18577974952225__dbca4818-2b94-41eb-8692-a1ade41f3fdb-1681750639699245ec-1": {
@@ -22,7 +22,7 @@
           "settings": {
             "button_label_1": "Shop the collection",
             "button_link_1": "shopify:\/\/collections\/sneakers",
-            "button_style_secondary_1": true,
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -37,16 +37,16 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/GA6.2.1.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "small",
-        "desktop_content_position": "middle-center",
+        "image_height": "medium",
+        "desktop_content_position": "bottom-left",
         "show_text_box": false,
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "left",
         "color_scheme": "background-1",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true,
-        "custom_group": ""
+        "custom_group": "VIP"
       }
     },
     "image_banner": {
@@ -55,7 +55,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "VIP early access Collection",
+            "heading": "VIP EARLY ACCESS COLLECTION",
             "heading_size": "h1"
           }
         },
@@ -86,16 +86,16 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/GA6.1.1.jpg",
         "image_overlay_opacity": 40,
-        "image_height": "small",
-        "desktop_content_position": "bottom-center",
+        "image_height": "medium",
+        "desktop_content_position": "bottom-left",
         "show_text_box": false,
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "left",
         "color_scheme": "background-1",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false,
-        "custom_group": ""
+        "custom_group": "VIP"
       }
     },
     "31e44111-df43-4d9e-abd3-0b3bf03cb7f7": {
@@ -208,7 +208,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/63f7229f677916000ce8834c.jpg",
-        "image_overlay_opacity": 30,
+        "image_overlay_opacity": 40,
         "image_height": "large",
         "desktop_content_position": "bottom-left",
         "show_text_box": false,
