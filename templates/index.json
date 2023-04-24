@@ -320,6 +320,55 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "31e44111-df43-4d9e-abd3-0b3bf03cb7f7": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18577974952225__31e44111-df43-4d9e-abd3-0b3bf03cb7f7-1682319697ec6983aa-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--18577974952225__31e44111-df43-4d9e-abd3-0b3bf03cb7f7-1682319697ec6983aa-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--18577974952225__31e44111-df43-4d9e-abd3-0b3bf03cb7f7-1682319697ec6983aa-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18577974952225__31e44111-df43-4d9e-abd3-0b3bf03cb7f7-1682319697ec6983aa-0",
+        "template--18577974952225__31e44111-df43-4d9e-abd3-0b3bf03cb7f7-1682319697ec6983aa-1",
+        "template--18577974952225__31e44111-df43-4d9e-abd3-0b3bf03cb7f7-1682319697ec6983aa-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/6422b1f1b8933700091859a1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "custom_group": ""
+      }
     }
   },
   "order": [
@@ -331,6 +380,7 @@
     "video",
     "multicolumn",
     "055bac4e-9c3f-4420-9ce0-f00273c0c8d1",
-    "5b9b27e1-28a0-4b26-b5c5-e00886961ce3"
+    "5b9b27e1-28a0-4b26-b5c5-e00886961ce3",
+    "31e44111-df43-4d9e-abd3-0b3bf03cb7f7"
   ]
 }
