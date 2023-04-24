@@ -208,11 +208,19 @@
             "button_link_2": "",
             "button_style_secondary_2": false
           }
+        },
+        "f350193f-df2e-44aa-b3fd-0b564ae2dd5b": {
+          "type": "text",
+          "settings": {
+            "text": "Discover early access product",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
         "template--18577974952225__9b8e580d-9bd8-4ddf-83a3-fdafa2e462a4-1682319697ec6983aa-0",
-        "template--18577974952225__9b8e580d-9bd8-4ddf-83a3-fdafa2e462a4-1682319697ec6983aa-2"
+        "template--18577974952225__9b8e580d-9bd8-4ddf-83a3-fdafa2e462a4-1682319697ec6983aa-2",
+        "f350193f-df2e-44aa-b3fd-0b564ae2dd5b"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/63f7229f677916000ce8834c.jpg",
