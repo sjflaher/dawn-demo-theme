@@ -145,7 +145,7 @@
         "template--18577974952225__8d3ccd91-126e-4da3-802a-0a373c794dad-1682319697ec6983aa-0": {
           "type": "heading",
           "settings": {
-            "heading": "MEN'S SPRING SUMMER 2023 COLLECTION",
+            "heading": "MEN'S SNEAKERS 2023 COLLECTION",
             "heading_size": "h1"
           }
         },
@@ -159,11 +159,19 @@
             "button_link_2": "",
             "button_style_secondary_2": false
           }
+        },
+        "e9f1b06a-904d-465c-9a53-808219df80f7": {
+          "type": "text",
+          "settings": {
+            "text": "Enjoy 30% discount and free shipping! This offer is JUST FOR YOU",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
         "template--18577974952225__8d3ccd91-126e-4da3-802a-0a373c794dad-1682319697ec6983aa-0",
-        "template--18577974952225__8d3ccd91-126e-4da3-802a-0a373c794dad-1682319697ec6983aa-2"
+        "template--18577974952225__8d3ccd91-126e-4da3-802a-0a373c794dad-1682319697ec6983aa-2",
+        "e9f1b06a-904d-465c-9a53-808219df80f7"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/6422b1f2d9f9cb000c1c914a.jpg",
