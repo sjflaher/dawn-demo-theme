@@ -470,7 +470,7 @@
                     endfor
                     assign look_variant_array = look_variants | split: ','
                 %}
-                {{ look_count }}
+
 
                   <script>
                       //Adding event listner to Add To Cart Button
@@ -493,14 +493,6 @@
                           //Create variable with Bundle product details
                          // const bundleVarients = JSON.parse('{{bundlePayload}}').content
                           //Create empty request body for Cart API Request
-
-
-
-                          //Loop through Bundle product details to populate cart request body
-                         /* for(i=0; i < bundleVarients.length; i++){
-                          let item = {'id':bundleVarients[i],'quantity':1 };
-                          formData.items.push(item);
-                          }*/
 
                           //Send "Add to Cart" request via Cart API
                           fetch(window.Shopify.routes.root + 'cart/add.js', {
