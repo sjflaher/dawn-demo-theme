@@ -27,6 +27,7 @@
 
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
   {% if section.settings.image_zoom == 'hover' %}
     <script id="EnableZoomOnHover-main" src="{{ 'magnify.js' | asset_url }}" defer="defer"></script>
   {% endif %}
@@ -455,20 +456,44 @@
                   </ul>
                   <button class="button button--secondary add_all">Add All</button>
 
+
+                  {% liquid
+
+                    assign look_count = product.metafields.related_products.complete_the_look.size
+                    assign look_variants = ''
+                    for product in product.metafields.related_products.complete_the_look.value
+                      if forloop.last
+                      assign look_variants = look_variants | append: product.first_available_variant.id
+                       else
+                      assign look_variants = look_variants | append: product.first_available_variant.id | append: ','
+                      endif
+                    endfor
+                    assign look_variant_array = look_variants | split: ','
+                %}
+                {{ look_count }}
+
                   <script>
                       //Adding event listner to Add To Cart Button
                       document.querySelector(".add_all").addEventListener("click", addBundle);
                       //Adding event listner to Add To Cart Button
+                      let look_variant_js = []
+                      look_variant_js.push({{ look_variant_array[0] }})
+                      look_variant_js.push({{ look_variant_array[1] }})
+                              //Create empty request body for Cart API Request
+                       let formData = {'items': []}
+
+                      //Loop through Bundle product details to populate cart request body
+                      for(i=0; i < look_variant_js.length; i++){
+                      let item = {'id':look_variant_js[i],'quantity':1 };
+                      formData.items.push(item);
+                      }
+
+                      console.log(formData);
                       function addBundle(){
                           //Create variable with Bundle product details
-                          //const bundleVarients = JSON.parse('{{bundlePayload}}').content
+                         // const bundleVarients = JSON.parse('{{bundlePayload}}').content
                           //Create empty request body for Cart API Request
-                          let formData = {
-                            'items': [{
-                             'id': 8217952616737,
-                             'quantity': 2
-                             }]
-                           };
+
 
 
                           //Loop through Bundle product details to populate cart request body
