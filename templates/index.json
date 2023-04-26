@@ -46,7 +46,7 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true,
-        "custom_group": "VIP"
+        "custom_group": ""
       }
     },
     "image_banner": {
@@ -95,7 +95,7 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false,
-        "custom_group": "VIP"
+        "custom_group": ""
       }
     },
     "31e44111-df43-4d9e-abd3-0b3bf03cb7f7": {
