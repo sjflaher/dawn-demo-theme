@@ -505,12 +505,13 @@
                               .then(response => {
                                   if(response.ok){
                                       //If Cart API request successful, redirect to cart page
-                                      window.location.href = "/cart";
+                                      window.location = window.routes.cart_url;
                                   }
                                   return response.json();
                               })
                               .catch((error) => {
                                   console.error('Error:', error);
+                                  console.log(error)
                               });
                       };
                   </script>
