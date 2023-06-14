@@ -1,10 +1,9 @@
+<!-- HEAD -->
 <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
 
-<!-- CONTENT_FOR_HEADER -->
 {{ content_for_header }}
-<!-- /CONTENT_FOR_HEADER -->
 
 {%- liquid
   assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
@@ -198,14 +197,7 @@
 {%- unless settings.type_header_font.system? -%}
   <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
 {%- endunless -%}
-
-<a class="skip-to-content-link button visually-hidden" href="#MainContent">
-  {{ "accessibility.skip_to_text" | t }}
-</a>
-
-{%- if settings.cart_type == 'drawer' -%}
-  {%- render 'cart-drawer' -%}
-{%- endif -%}
+<!-- /HEAD -->
 
 <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
   {{ content_for_layout }}
