@@ -2,7 +2,9 @@
 <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
 
+<!-- CONTENT_FOR_HEADER -->
 {{ content_for_header }}
+<!-- /CONTENT_FOR_HEADER -->
 
 {%- liquid
   assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
