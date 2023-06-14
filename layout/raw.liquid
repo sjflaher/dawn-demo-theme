@@ -1,9 +1,6 @@
 <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
-{%- if settings.animations_reveal_on_scroll -%}
-  <script src="{{ 'animations.js' | asset_url }}" id="AnimationsScript" defer="defer"></script>
-{%- endif -%}
 
 {{ content_for_header }}
 
@@ -199,10 +196,6 @@
 {%- unless settings.type_header_font.system? -%}
   <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
 {%- endunless -%}
-
-{%- if settings.predictive_search_enabled -%}
-  <link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
-{%- endif -%}
 
 <a class="skip-to-content-link button visually-hidden" href="#MainContent">
   {{ "accessibility.skip_to_text" | t }}
