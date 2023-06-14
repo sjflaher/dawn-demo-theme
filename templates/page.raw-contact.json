@@ -1,5 +1,5 @@
 {
-  "layout": "theme.raw",
+  "layout": "theme.raw.liquid",
   "sections": {
     "main": {
       "type": "main-page",
