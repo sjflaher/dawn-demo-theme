@@ -129,6 +129,7 @@
     "checkout_logo_position": "left",
     "checkout_logo_size": "large",
     "checkout_body_background_color": "#ffffff",
+    "layout": true,
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
