@@ -6,7 +6,9 @@
 {% endschema %}
 
 <div class="page-width page-width--narrow section-{{ section.id }}-padding">
-MY BEAUTIFUL VENDOR
+{% for vendor in shop.vendors %}
+  {{  vendor }}
+{% endfor %}
 </div>
 {% stylesheet %}
 {% endstylesheet %}
