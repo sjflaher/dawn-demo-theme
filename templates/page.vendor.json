@@ -7,6 +7,11 @@
         "padding_bottom": 28
       }
     },
+    "vendor": {
+      "type": "main-vendor",
+      "settings": {
+      }
+    },
     "0e57c72e-1177-4047-8956-cff48f6c1d53": {
       "type": "image-banner",
       "blocks": {
@@ -86,6 +91,7 @@
   },
   "order": [
     "main",
+    "vendor",
     "0e57c72e-1177-4047-8956-cff48f6c1d53",
     "a8f5c8f9-299c-4a71-8cd0-95b124658c7d"
   ]
