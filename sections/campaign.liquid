@@ -13,7 +13,7 @@
 
 <div class="banner">BANNER</div>
 <div class="products">
-  {{ campaign.campaign_products[0] }}
+  {{ campaign.campaign_products[0] | json }}
   {% for p in campaign.campaign_products %}
     {{ p }}
     <h2>{{ p.title }}</h2>
