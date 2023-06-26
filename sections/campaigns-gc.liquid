@@ -7,10 +7,11 @@
 
   <div><h2>Some stuff here!</h2></div>
 
-{{ shop.metaobjects }}
+{% for campaign in shop.metaobjects["campaign"].values %}
 
-{% for campaign in shop.metaobjects.campaign %}
-  {{ campaign.title }}
+{% for foo in campaign %}
+  {{ foo }}
+{% endfor %}
 {% endfor %}
 
 {% stylesheet %}
