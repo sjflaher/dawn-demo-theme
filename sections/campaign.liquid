@@ -13,9 +13,15 @@
 <div class="banner">BANNER</div>
 <div class="products">
   {% for p in campaign.campaign_products.value %}
-
+      <div class="product">
+     <h2>{{ p.title }}</h2>
+     <p>{{ p.description }}</p>
+     <p>Shipping Message: {{ p.metafields.global.shipping_message }}</p>
     {{ p.featured_image | image_url: width: 400 | image_tag: height: 300 }}
-    {% render 'card-product', card_product: p %}
+    </div>
+    {% comment %}
+      {% render 'card-product', card_product: p %}
+    {% endcomment %}
   {% endfor %}
 </div>
 
@@ -28,7 +34,7 @@
   }
 
   
-  .products a {
+  .product {
     margin: 20px;
     text-decoration: none;
   }
