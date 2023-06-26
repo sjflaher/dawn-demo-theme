@@ -20,6 +20,7 @@
       <p>Price: {{ p.price | money }}</p>
       {{ p.featured_image | image_url: width: 400 | image_tag: height: 300 }}
     </div>
+  {% render 'card-product', card_product: p %}
   {% endfor %}
 </div>
 
