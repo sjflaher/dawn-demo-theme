@@ -8,9 +8,11 @@
   <div><h2>Some stuff here!</h2></div>
 
 {% for campaign in shop.metaobjects["campaign"].values %}
-
+  {{ campaign.image_4_3 }}
   {{ campaign.title }}
-
+  {{ campaign.description }}
+  {{ campaign.start_date }}
+  {{ campaign.end_date }}
 {% endfor %}
 
 {% stylesheet %}
