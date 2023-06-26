@@ -7,10 +7,10 @@
 
   <div><h2>Some stuff here!</h2></div>
 
-{{ shop.metaobjects['campaign-number-1']['title'] }}
+{{ shop.metaobjects['campaign']['campaign-number-1']['title'] }}
 
 
-<script>console.log({{ shop.metaobjects['campaign-number-1'] | json }});</script>
+<script>console.log({{ shop.metaobjects['campaign']['campaign-number-1'] | json }});</script>
 
 
 
@@ -18,5 +18,5 @@
 {% endstylesheet %}
 
 {% javascript %}
-  console.log({{ shop.metaobjects['campaign-number-1'] | json }});
+  console.log({{ shop.metaobjects['campaign']['campaign-number-1'] | json }});
 {% endjavascript %}
