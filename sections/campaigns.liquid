@@ -7,10 +7,10 @@
 
   <div><h2>Some stuff here!</h2></div>
 
-{{ shop.metaobjects.campaign.title }}
+{{ shop.metaobjects.campaign-number-1.title }}
 <script>console.log({{ shop.metaobjects.campaign-number-1 | json }});</script>
 
-{% for campaign in shop.metaobjects.campaign-number-1 %}
+{% for campaign in shop.metaobjects.campaign %}
   {{ campaign.title }}
 {% endfor %}
 
