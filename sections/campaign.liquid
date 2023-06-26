@@ -13,7 +13,7 @@
 
 <div class="banner">BANNER</div>
 <div class="products">
-  {% for p in campaign.campaign_products %}
+  {% for p in campaign.campaign_products.values %}
     {{ p }}
     <h2>{{ p.title }}</h2>
     <p>{{ p.description }}</p>
