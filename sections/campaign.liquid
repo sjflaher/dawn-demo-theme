@@ -12,6 +12,7 @@
 <div class="banner">BANNER</div>
 <div class="products">
   {% for product in campaign.products %}
+    {{ product | json }}
   <a href="/product/{{ product.system.handle }}">
     {{ product.image_4_3 | image_url: width: 400 | image_tag: height: 300 }}
     <h2>{{ product.title }}</h2>
