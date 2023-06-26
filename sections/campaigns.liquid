@@ -7,7 +7,7 @@
 
   <div><h2>Some stuff here!</h2></div>
 
-{{ shop.metaobjects.campaign | json }}
+{{ shop.metafields | json }}
 
 {% for campaign in shop.metaobjects.campaign %}
   {{ campaign.title }}
