@@ -9,15 +9,16 @@
 {% assign campaign = shop.metaobjects.campaign[page.handle] %}
 <h1>{{ campaign.title }}</h1>
 
-{{ campaign["campaign_products"] | json }}
+{{ campaign | json }}
 
 <div class="banner">BANNER</div>
 <div class="products">
   {% for p in campaign.campaign_products %}
-    <h2>{{ product.title }}</h2>
-    <p>{{ product.description }}</p>
-    <p>Price: {{ product.price | money }}</p>
-    <img src="{{ product.featured_image.src }}" alt="{{ product.title}}">
+    {{ p }}
+    <h2>{{ p.title }}</h2>
+    <p>{{ p.description }}</p>
+    <p>Price: {{ p.price | money }}</p>
+    <img src="{{ p.featured_image.src }}" alt="{{ p.title}}">
   {% endfor %}
 </div>
 
