@@ -5,13 +5,22 @@
   }
 {% endschema %}
 
-{% for campaign in shop.metaobjects["campaign"].values %}
-  {{ campaign.image_4_3 | image_url: width: 400 | image_tag: height: 300 }}
-  <h2>{{ campaign.title }}</h2>
-{% endfor %}
+<div class="campaigns">
+  {% for campaign in shop.metaobjects["campaign"].values %}
+  <div>
+    {{ campaign.image_4_3 | image_url: width: 400 | image_tag: height: 300 }}
+    <h2>{{ campaign.title }}</h2>
+  </div>
+  {% endfor %}
+</div>
+
 
 
 {% stylesheet %}
+  .campaigns {
+    display: flex;
+    flex-wrap: wrap;
+  }
 {% endstylesheet %}
 
 {% javascript %}

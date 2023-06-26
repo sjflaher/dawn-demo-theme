@@ -13,7 +13,7 @@
   <h2>{{ campaign.description }}</h2>
   <span>{{ campaign.start_date }}</span>
   <span>{{ campaign.end_date }}</span>
-  {% for product in ampaign.campaign_products.values %}
+  {% for product in campaign.campaign_products.values %}
     <span>{{ product.title }}</span>
   {% endfor %}
 {% endfor %}
