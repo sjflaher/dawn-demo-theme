@@ -14,8 +14,8 @@
 <div class="banner">BANNER</div>
 <div class="products">
   {{ campaign.campaign_products[0] }}
-  {% for p in campaign.campaign_products %}
-    {{ p | json }}
+  {% for p in campaign.campaign_products.references %}
+    {{ p }}
     <h2>{{ p.title }}</h2>
     <p>{{ p.description }}</p>
     <p>Price: {{ p.price | money }}</p>
