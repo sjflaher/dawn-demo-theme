@@ -8,12 +8,12 @@
 {{ page.handle }}
 {% assign campaign = shop.metaobjects.campaign[page.handle] %}
 <h1>{{ campaign.title }}</h1>
+{{ campaign.campaign_products.value | json }}
 
 <div class="banner">BANNER</div>
 <div class="products">
-  {{ campaign.campaign_products[0] }}
   {% for p in campaign.campaign_products.value %}
-    {% render 'card-product', card_product: p, media_aspect_ratio: 'portrait', show_secondary_image: true %}
+    {% render 'card-product', card_product: p %}
   {% endfor %}
 </div>
 
