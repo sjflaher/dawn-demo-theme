@@ -11,16 +11,10 @@
       "type": "campaigns",
       "settings": {
       }
-    },
-    "products": {
-      "type": "main-collection-product-grid",
-      "settings": {
-      }
     }
   },
   "order": [
     "main",
-    "campaigns",
-    "products"
+    "campaigns"
   ]
 }
