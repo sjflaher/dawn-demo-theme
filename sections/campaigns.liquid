@@ -4,6 +4,7 @@
     "settings": []
   }
 {% endschema %}
+{{ shop.metaobjects['campaign'].values }}
 
 {% for campaign in shop.metaobjects["campaign"].values %}
   <h1>{{ campaign.title }}</h1>
