@@ -11,7 +11,7 @@
 
 {% if campaign.rich_content.value %}
   <span>Rich content</span>
-  {% for rich_slice in campaign.rich_content.value.slices.values %}
+  {% for rich_slice in campaign.rich_content.value.slices.value %}
     <span>yo</span>
   {%  endfor %}
 {% endif %}
