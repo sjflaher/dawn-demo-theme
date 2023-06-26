@@ -8,7 +8,7 @@
   <div><h2>Some stuff here!</h2></div>
 
 {{ shop.metaobjects.campaign.title }}
-<script>console.log({{ shop.metaobjects | json }});</script>
+<script>console.log({{ shop.metaobjects.campaigns | json }});</script>
 
 {% for campaign in shop.metaobjects.campaign %}
   {{ campaign.title }}
