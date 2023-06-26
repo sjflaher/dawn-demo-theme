@@ -14,6 +14,10 @@
   {% for rich_slice in campaign.rich_content.value.slices.value %}
     <div class="rich-cdp-content__image-container">
       <img src="{{ rich_slice.image_url }}" width="100%"/>
+
+      {% for hotspot in rich_slice.hotsposts.value %}
+      asdfasd
+      {%  endfor %}
     </div>
   {%  endfor %}
   </div>
