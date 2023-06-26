@@ -1,12 +1,21 @@
 {% schema %}
   {
-    "name": "Section name",
+    "name": "campaigns-liquid",
     "settings": []
   }
 {% endschema %}
+
+  <div><h2>Some stuff here!</h2></div>
+
+{{ shop.metaobjects }}
+
+{% for campaign in shop.metaobjects.campaign %}
+  {{ campaign.title }}
+{% endfor %}
 
 {% stylesheet %}
 {% endstylesheet %}
 
 {% javascript %}
+  console.log({{shop.metaobjects}})
 {% endjavascript %}
