@@ -9,10 +9,8 @@
 {% assign campaign = shop.metaobjects.campaign[page.handle] %}
 <h1>{{ campaign.title }}</h1>
 
-{{ campaign.rich_content.value }}
-
 {% if campaign.rich_content.value %}
-  {% for rich_slice in campaign.rich_content.value %}
+  {% for rich_slice in campaign.rich_content.values %}
     <span>yo</span>
   {%  endfor %}
 {% endif %}
