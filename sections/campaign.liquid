@@ -13,7 +13,7 @@
 <div class="banner">BANNER</div>
 <div class="products">
   {% for product in campaign.campaign_products %}
-    {{ product.value | json }}
+    {{ product.content }}
     {% render 'card-product', card_product: product %}
   {% endfor %}
 </div>
