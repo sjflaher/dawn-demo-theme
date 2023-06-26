@@ -11,7 +11,7 @@
 
 {{ campaign.rich_content.value }}
 
-{% if campaign.rich_content.value %}
+{% if campaign.rich_content.value != null %}
   <span>Rich content!</span>
 {% endif %}
 
