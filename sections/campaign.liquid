@@ -5,10 +5,12 @@
   }
 {% endschema %}
 
+{{ page.handle }}
+{% assign campaign = shop.metaobjects.campaign[page.handle] %}
 
 <div class="banner">BANNER</div>
 <div class="products">
-  {% for campaign in shop.metaobjects["campaign"].values %}
+  {% for product in campaign.products %}
   <a href="/product/{{ product.system.handle }}">
     {{ product.image_4_3 | image_url: width: 400 | image_tag: height: 300 }}
     <h2>{{ product.title }}</h2>
