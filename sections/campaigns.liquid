@@ -7,14 +7,13 @@
 
 <div class="campaigns">
   {% for campaign in shop.metaobjects["campaign"].values %}
-  <div>
+  <a href="/campaign/{{ campaign.system.handle }}">
     {{ forloop.length }}
     {{ campaign.handle }}
     {{ campaign.image_4_3 | image_url: width: 400 | image_tag: height: 300 }}
 
-    <pre>{{ campaign.system.handle }}</pre>
     <h2>{{ campaign.title }}</h2>
-  </div>
+  </a>
   {% endfor %}
 </div>
 
@@ -27,7 +26,7 @@
   }
 
   
-  .campaigns div {
+  .campaigns a {
     margin: 20px;
   }
 {% endstylesheet %}
