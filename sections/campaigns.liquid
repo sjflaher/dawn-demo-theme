@@ -7,11 +7,8 @@
 
   <div><h2>Some stuff here!</h2></div>
 
-{{ shop.metafields | json }}
+{{ shop.metaobjects }}
 
-{% for campaign in shop.metaobjects.campaign %}
-  {{ campaign.title }}
-{% endfor %}
 
 {% stylesheet %}
 {% endstylesheet %}
