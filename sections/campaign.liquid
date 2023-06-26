@@ -12,7 +12,7 @@
 
 <div class="banner">BANNER</div>
 <div class="products">
-  {% for p in campaign.campaign_products.values %}
+  {% for p in campaign.campaign_products %}
     <h2>{{ product.title }}</h2>
     <p>{{ product.description }}</p>
     <p>Price: {{ product.price | money }}</p>
