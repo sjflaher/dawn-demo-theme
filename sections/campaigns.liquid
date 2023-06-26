@@ -5,13 +5,13 @@
   }
 {% endschema %}
 
-  <div><h2>Some stuff here!</h2></div>
-
-{{ shop.metaobjects['campaign']['campaign-number-1']['title'] }}
-
-
-<script>console.log({{ shop.metaobjects['campaign']['campaign-number-1'] | json }});</script>
-
+{% for campaign in shop.metaobjects["campaign"].values %}
+  <h1>{{ campaign.title }}</h1>
+  <h2>{{ campaign.description }}</h2>
+  <span>{{ campaign.start_date }}</span>
+  <span>{{ campaign.end_date }}</span>
+  <span>{{ campaign.campaign_products.length }}</span>
+{% endfor %}
 
 
 {% stylesheet %}
