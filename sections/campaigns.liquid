@@ -9,7 +9,7 @@
   {% for campaign in shop.metaobjects["campaign"].values %}
   <div>
     {{ forloop.length }}
-    {{ forloop.index }}
+    {{ campaign.handle }}
     {{ campaign.image_4_3 | image_url: width: 400 | image_tag: height: 300 }}
     <h2>{{ campaign.title }}</h2>
   </div>
