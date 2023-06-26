@@ -35,10 +35,16 @@
         "padding_bottom": 36,
         "club_only": true
       }
+    },
+    "campaigns": {
+      "type": "campaigns",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "a8f5c8f9-299c-4a71-8cd0-95b124658c7d"
+    "a8f5c8f9-299c-4a71-8cd0-95b124658c7d",
+    "campaigns"
   ]
 }
