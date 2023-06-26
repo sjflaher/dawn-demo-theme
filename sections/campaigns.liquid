@@ -11,6 +11,7 @@
     {{ campaign | json }}
     {{ campaign.image_4_3 | image_url: width: 400 | image_tag: height: 300 }}
     <h2>{{ campaign.title }}</h2>
+    <span>{{ campaign.handle }}</span>
   </div>
   {% endfor %}
 </div>
