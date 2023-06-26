@@ -11,16 +11,10 @@
       "type": "campaigns",
       "settings": {
       }
-    },
-    "campaigns-gc": {
-      "type": "campaigns-gc",
-      "settings": {
-      }
     }
   },
   "order": [
     "main",
-    "campaigns",
-    "campaigns-gc"
+    "campaigns"
   ]
 }
