@@ -13,8 +13,10 @@
 <div class="banner">BANNER</div>
 <div class="products">
   {% for p in campaign.campaign_products %}
-    {{ p.description }}
-    {% render 'card-product', card_product: p %}
+    <h2>{{ product.title }}</h2>
+    <p>{{ product.description }}</p>
+    <p>Price: {{ product.price | money }}</p>
+    <img src="{{ product.featured_image.src }}" alt="{{ product.title}}">
   {% endfor %}
 </div>
 
