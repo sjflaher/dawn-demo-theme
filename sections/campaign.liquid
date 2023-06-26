@@ -1,11 +1,34 @@
 {% schema %}
   {
-    "name": "Section name",
+    "name": "campaigns-liquid",
     "settings": []
   }
 {% endschema %}
 
+<div class="campaigns">
+  {% for campaign in shop.metaobjects["campaign"].values %}
+  <a href="/campaign/{{ campaign.system.handle }}">
+    {{ campaign.handle }}
+    {{ campaign.image_4_3 | image_url: width: 400 | image_tag: height: 300 }}
+
+    <h2>{{ campaign.title }}</h2>
+  </a>
+  {% endfor %}
+</div>
+
+
+
 {% stylesheet %}
+  .campaigns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  
+  .campaigns a {
+    margin: 20px;
+    text-decoration: none;
+  }
 {% endstylesheet %}
 
 {% javascript %}
