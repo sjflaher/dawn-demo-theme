@@ -9,6 +9,7 @@
 {% assign campaign = shop.metaobjects.campaign[page.handle] %}
 <h1>{{ campaign.title }}</h1>
 
+{{ campaign | json }}
 
 <div class="banner">BANNER</div>
 <div class="products">
