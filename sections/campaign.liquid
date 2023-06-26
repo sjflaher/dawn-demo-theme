@@ -10,6 +10,8 @@
 <h1>{{ campaign.title }}</h1>
 
 {{ campaign.campaign_products }}
+{{ campaign.campaign_products.references }}
+{{ campaign.campaign_products.references | json }}
 
 <div class="banner">BANNER</div>
 <div class="products">
