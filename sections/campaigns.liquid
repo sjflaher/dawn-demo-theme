@@ -8,6 +8,7 @@
   <div><h2>Some stuff here!</h2></div>
 
 {{ shop.metaobjects.campaign.title }}
+<script>console.log({{ shop.metaobjects | json }});</script>
 
 {% for campaign in shop.metaobjects.campaign %}
   {{ campaign.title }}
@@ -17,5 +18,5 @@
 {% endstylesheet %}
 
 {% javascript %}
-  console.log({{shop.metaobjects}})
+  
 {% endjavascript %}
