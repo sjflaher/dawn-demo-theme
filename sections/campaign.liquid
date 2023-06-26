@@ -11,7 +11,7 @@
 
 <div class="banner">BANNER</div>
 <div class="products">
-  {% for product in campaign.products %}
+  {% for product in campaign.products.values %}
     {% render 'card-product', card_product: product %}
   {% endfor %}
 </div>
