@@ -6,7 +6,7 @@
 {% endschema %}
 
 {% for campaign in shop.metaobjects["campaign"].values %}
-  <img src="{{ campaign.image_4_3 }}" width="400" height="300" />
+  {{ campaign.image_4_3 | img_tag }}
   <h2>{{ campaign.title }}</h2>
 {% endfor %}
 
