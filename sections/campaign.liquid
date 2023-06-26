@@ -12,7 +12,7 @@
 {% if campaign.rich_content.value %}
   <span>Rich content</span>
   {% for rich_slice in campaign.rich_content.value.slices.value %}
-    {{ rich_slice.image_url }}
+    {{ rich_slice.image_url | image_tag }}
   {%  endfor %}
 {% endif %}
 
