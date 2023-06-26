@@ -44,11 +44,17 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "campaigns": {
+      "type": "campaigns",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "a8f5c8f9-299c-4a71-8cd0-95b124658c7d",
-    "3301bf89-1339-4ba5-8e13-5e47f2076f35"
+    "3301bf89-1339-4ba5-8e13-5e47f2076f35",
+    "campaigns"
   ]
 }
