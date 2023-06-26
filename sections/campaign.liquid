@@ -9,7 +9,7 @@
 {% assign campaign = shop.metaobjects.campaign[page.handle] %}
 <h1>{{ campaign.title }}</h1>
 
-{{ campaign.rich_content }}
+{{ campaign.rich_content.value }}
 
 {% if campaign.rich_content.values.length > 0 %}
   <span>Rich content!</span>
