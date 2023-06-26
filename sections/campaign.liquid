@@ -1,13 +1,15 @@
 {% schema %}
   {
-    "name": "campaigns-liquid",
+    "name": "campaign-liquid",
     "settings": []
   }
 {% endschema %}
 
-<div class="campaigns">
+
+<div class="banner">BANNER</div>
+<div class="products">
   {% for campaign in shop.metaobjects["campaign"].values %}
-  <a href="/campaign/{{ campaign.system.handle }}">
+  <a href="/product/{{ campaign.system.handle }}">
     {{ campaign.handle }}
     {{ campaign.image_4_3 | image_url: width: 400 | image_tag: height: 300 }}
 
