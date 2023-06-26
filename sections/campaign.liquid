@@ -12,9 +12,9 @@
 
 <div class="banner">BANNER</div>
 <div class="products">
-  {% for product in campaign.campaign_products %}
-    {{ product.content }}
-    {% render 'card-product', card_product: product %}
+  {% for p in campaign.campaign_products %}
+    {{ p.description }}
+    {% render 'card-product', card_product: p %}
   {% endfor %}
 </div>
 
