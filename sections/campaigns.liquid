@@ -9,6 +9,10 @@
 
 {{ shop.metaobjects.campaign }}
 
+{% for campaign in shop.metaobjects.campaign %}
+  {{ campaign.title }}
+{% endfor %}
+
 {% stylesheet %}
 {% endstylesheet %}
 
