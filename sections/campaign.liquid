@@ -18,7 +18,7 @@
     <h2>{{ p.title }}</h2>
     <p>{{ p.description }}</p>
     <p>Price: {{ p.price | money }}</p>
-    <img src="{{ p.featured_image.src }}" alt="{{ p.title}}">
+    {{ campaign.featured_image | image_url: width: 400 | image_tag: height: 300 }}
   {% endfor %}
 </div>
 
