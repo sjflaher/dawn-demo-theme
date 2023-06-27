@@ -26,7 +26,11 @@
     </div>
   {%  endfor %}
   </div>
+
+{% else %}
+  {{ campaign.image_4_3 | image_url: width: 400 | image_tag: height: 300 }}
 {% endif %}
+
 
 <div class="products">
   {% for p in campaign.campaign_products.value %}
