@@ -46,7 +46,7 @@
           {{ p.featured_image | image_url: width: 400 | image_tag: height: 300, width: 400 }}
         </div>
         <h2 class="product_title">{{ p.title }}</h2>
-        <p class="product_price">{{ p.price }}</p>
+        <p class="product_price">{{ p.price | money }}</p>
       </div>
       {% comment %}
         {% render 'card-product', card_product: p %}
