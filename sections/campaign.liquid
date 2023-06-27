@@ -33,10 +33,7 @@
     <script>console.log({{ campaign.image_4_3 | json }});</script>
     <div class="mood_image_section"> 
       <div class="mood_image">
-        <img src="{{ campaign.featured_image | image_url: width: 533 }}" alt="{{ campaign.featured_image.alt}}" width="{{ campaign.featured_media.width }}" height="{{ campaign.featured_media.height }}" />
-        {% comment %}
-          {{ campaign.image_4_3 | image_url: width: 600 | image_tag: height: 400 }}
-        {% endcomment %}
+          {{ campaign.image_4_3 | image_url: width: 600 | image_tag: width: nil }}
       </div>
       <div class="mood_content">
         <h1 class="campaign_title">{{ campaign.title }}</h1>
