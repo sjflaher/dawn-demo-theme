@@ -114,15 +114,17 @@
     padding: 20px;
   }
 
-  @media (min-width: 48em) and (min-width: 80em)  {
-    .main_wrapper {
-      max-width: 80em;
-    }
-  }
+  @media (min-width: 48em)  {
 
-  @media (min-width: 48em) and (min-width: 96em)  {
-    .main_wrapper {
-      max-width: 96em;
+    @media (min-width: 80em) {
+      .main_wrapper {
+        max-width: 80em;
+      }
+    }
+    @media (min-width: 96em) {
+      .main_wrapper {
+        max-width: 96em;
+      }
     }
   }
 {% endstylesheet %}
