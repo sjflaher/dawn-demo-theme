@@ -5,7 +5,6 @@
   }
 {% endschema %}
 
-{{ page.handle }}
 {% assign campaign = shop.metaobjects.campaign[page.handle] %}
 <h1>{{ campaign.title }}</h1>
 
@@ -28,7 +27,14 @@
   </div>
 
 {% else %}
-  {{ campaign.image_4_3 | image_url: width: 400 | image_tag: height: 300 }}
+  <div class="mood_image_section">
+    <div class="mood_image">
+      {{ campaign.image_4_3 | image_url: width: 400 | image_tag: height: 300 }}
+    </div>
+    <div class="mood_content">
+      <h1>{{ campaign.title }}</h1>
+    </div>
+  </div>
 {% endif %}
 
 
@@ -48,6 +54,9 @@
 
 
 {% stylesheet %}
+  .mood_image_section {
+    display: flex;
+  }
   .products {
     display: flex;
     flex-wrap: wrap;
