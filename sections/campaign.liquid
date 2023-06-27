@@ -33,6 +33,7 @@
       <div class="product">
         {{ p.featured_image | image_url: width: 400 | image_tag: height: 300 }}
          <h2>{{ p.title }}</h2>
+          <p>{{ p.price }}</p>
     </div>
     {% comment %}
       {% render 'card-product', card_product: p %}
