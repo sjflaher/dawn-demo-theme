@@ -57,6 +57,7 @@
   .main_wrapper {
     padding-top: 100px;
     padding: 20px 0;
+    width: 100%;
   }
 
   .mood_content .campaign_title {
@@ -111,6 +112,18 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
     padding: 20px;
+  }
+
+  @media only screen and (min-width: 48em) and (min-width: 80em)  {
+    .main_wrapper {
+      max-width: 80em;
+    }
+  }
+
+  @media only screen and (min-width: 48em) and (min-width: 96em)  {
+    .main_wrapper {
+      max-width: 96em;
+    }
   }
 {% endstylesheet %}
 
