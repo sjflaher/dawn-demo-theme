@@ -30,8 +30,8 @@
   
   {% else %}
     <div class="mood_image_section"> 
-      <div class="mood_image">
-          {{ campaign.image_4_3 | image_url: width: 600 | image_tag: width: 600 }}
+      <div class="mood_image_container">
+          {{ campaign.image_4_3 | image_url: width: 600 | image_tag: width: 600, class: 'mood_image' }}
       </div>
       <div class="mood_content">
         <h1 class="campaign_title">{{ campaign.title }}</h1>
@@ -70,11 +70,15 @@
   .mood_content .campaign_title {
     margin-bottom: 0;
   }
+
+  .mood_image {
+    object-fit: contain;
+  }
   
   .mood_image_section {
     display: flex;
   }
-  .mood_image {
+  .mood_image_container {
     width: 55%;
   }
   .products {
