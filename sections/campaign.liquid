@@ -1,36 +1,36 @@
 {% schema %}
-  {
-    "name": "campaign-liquid",
-    "settings": []
-  }
+{
+  "name": "campaign-liquid",
+  "settings": []
+}
 {% endschema %}
 
 {% assign campaign = shop.metaobjects.campaign[page.handle] %}
 
 <div class="main_wrapper">
   {% if campaign.rich_content.value %}
-  <h1>{{ campaign.title }}</h1>
-  <div class="rich-cdp-content">
-  {% for rich_slice in campaign.rich_content.value.slices.value %}
-    <div class="rich-cdp-content__image-container">
-      <img src="{{ rich_slice.image_url }}" width="100%"/>
+    <h1>{{ campaign.title }}</h1>
+    <div class="rich-cdp-content">
+      {% for rich_slice in campaign.rich_content.value.slices.value %}
+        <div class="rich-cdp-content__image-container">
+          <img src="{{ rich_slice.image_url }}" width="100%">
 
-
-      {% for hotspot in rich_slice.hotspots.value %}
-        <a class="product-overlay"
-          href="{{ hotspot.product_link.value.url }}" 
-          style="width: {{ hotspot.width_percent }}%;height: {{ hotspot.height_percent }}%;top: {{ hotspot.top_percent }}%;left: {{ hotspot.left_percent }}%;"
-          >
-  </a>
-        {%  endfor %}
-      </div>
-    {%  endfor %}
+          {% for hotspot in rich_slice.hotspots.value %}
+            <a
+              class="product-overlay"
+              href="{{ hotspot.product_link.value.url }}"
+              style="width: {{ hotspot.width_percent }}%;height: {{ hotspot.height_percent }}%;top: {{ hotspot.top_percent }}%;left: {{ hotspot.left_percent }}%;"
+            >
+            </a>
+          {% endfor %}
+        </div>
+      {% endfor %}
     </div>
-  
+
   {% else %}
-    <div class="mood_image_section"> 
+    <div class="mood_image_section">
       <div class="mood_image_container">
-          {{ campaign.image_4_3 | image_url: width: 600 | image_tag: height: 400, width: 600, class: 'mood_image' }}
+        {{ campaign.image_4_3 | image_url: width: 600 | image_tag: height: 400, width: 600, class: 'mood_image' }}
       </div>
       <div class="mood_content">
         <h1 class="campaign_title">{{ campaign.title }}</h1>
@@ -38,14 +38,13 @@
       </div>
     </div>
   {% endif %}
-  
-  
+
   <div class="products">
     {% for p in campaign.campaign_products.value %}
-        <div class="product">
-          {{ p.featured_image | image_url: width: 400 | image_tag: height: 300 }}
-           <h2>{{ p.title }}</h2>
-            <p>{{ p.price }}</p>
+      <div class="product">
+        {{ p.featured_image | image_url: width: 400 | image_tag: height: 300 }}
+        <h2>{{ p.title }}</h2>
+        <p>{{ p.price }}</p>
       </div>
       {% comment %}
         {% render 'card-product', card_product: p %}
@@ -54,16 +53,11 @@
   </div>
 </div>
 
-
-
-
-
 {% stylesheet %}
-  
   .main_wrapper {
     padding-top: 100px;
     width: 60%;
-    margin-left: 20%; 
+    margin-left: 20%;
   }
 
   .mood_content .campaign_title {
@@ -73,7 +67,7 @@
   .mood_image {
     object-fit: contain;
   }
-  
+
   .mood_image_section {
     display: flex;
   }
@@ -109,13 +103,26 @@
   .rich-cdp-content img {
     width: 100%;
   }
-  
+
   .product {
     margin: 20px;
     text-decoration: none;
     display: flex;
     flex-direction: column;
   }
+
+  .grid-container {
+    display: grid;
+            grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns */
+            grid-gap: 20px; /* Gap between grid items */
+            padding: 20px; /* Padding around the grid container */
+        }
+
+        .grid-item {
+            background-color: #f2f2f2; /* Background color of grid items */
+            padding: 20px; /* Padding inside grid items */
+            text-align: center;
+        }
 {% endstylesheet %}
 
 {% javascript %}
