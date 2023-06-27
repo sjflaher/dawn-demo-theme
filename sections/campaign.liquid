@@ -29,8 +29,6 @@
     </div>
   
   {% else %}
-    {{ campaign.image_4_3.value }}
-    <script>console.log({{ campaign.image_4_3 | json }});</script>
     <div class="mood_image_section"> 
       <div class="mood_image">
           {{ campaign.image_4_3 | image_url: width: 600 }}
