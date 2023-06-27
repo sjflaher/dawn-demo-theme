@@ -33,7 +33,7 @@
         {{ campaign.image_4_3 | image_url: width: 600 | image_tag: height: 400 }}
       </div>
       <div class="mood_content">
-        <h1>{{ campaign.title }}</h1>
+        <h1 class="campaign_title">{{ campaign.title }}</h1>
         <p>{{ campaign.description }}</p>
       </div>
     </div>
@@ -63,6 +63,10 @@
   .main_wrapper {
     width: 60%;
     margin-left: 20%; 
+  }
+
+  .mood_content .campaign_title {
+    margin-bottom: 0;
   }
   
   .mood_image_section {
