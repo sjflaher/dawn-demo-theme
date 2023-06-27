@@ -1,0 +1,17 @@
+{
+  "parent": "header-group.json",
+  "context": {
+    "market": "dach"
+  },
+  "sections": {
+    "announcement-bar": {
+      "blocks": {
+        "announcement-bar-0": {
+          "settings": {
+            "text": "50 € für Sie\/ Kostenloser Rückversand*\/ 30 Tage Rückgaberecht\/ Kontakt & Hilfe"
+          }
+        }
+      }
+    }
+  }
+}

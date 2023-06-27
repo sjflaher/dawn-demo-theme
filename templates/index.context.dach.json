@@ -1,0 +1,20 @@
+{
+  "parent": "index.json",
+  "context": {
+    "market": "dach"
+  },
+  "sections": {
+    "image_banner": {
+      "blocks": {
+        "button": {
+          "settings": {
+            "button_label_1": "Jetzt shoppen"
+          }
+        }
+      },
+      "settings": {
+        "image": "shopify:\/\/shop_images\/DACH_HS_banner1_P100_Dekstop..jpg"
+      }
+    }
+  }
+}
