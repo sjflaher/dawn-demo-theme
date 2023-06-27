@@ -126,7 +126,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
-    padding: 20px;
+
   }
 
   @media (min-width: 48em)  {
@@ -136,7 +136,8 @@
         max-width: 80em;
       }
       .products {
-        grid-template-columns: repeat(4,minmax(0,1fr))
+        grid-template-columns: repeat(4,minmax(0,1fr));
+        padding: 20px;
       }
     }
 
