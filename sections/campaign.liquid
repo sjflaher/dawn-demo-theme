@@ -44,15 +44,16 @@
 
   <div class="products">
     {% for p in campaign.campaign_products.value %}
-      <a href="{{ p.url }}">
-        <div class="product">
+      <div class="product">
+        <a href="{{ p.url }}">
           <div class="product_image_container">
             {{ p.featured_image | image_url: width: 400 | image_tag: height: 300, width: 400 }}
           </div>
           <h2 class="product_title">{{ p.title }}</h2>
           <p class="product_price">{{ p.price | money_without_trailing_zeros }}</p>
+          </a>
         </div>
-      </a>
+      
       {% comment %}
         {% render 'card-product', card_product: p %}
       {% endcomment %}
