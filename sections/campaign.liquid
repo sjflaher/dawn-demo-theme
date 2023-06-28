@@ -9,7 +9,7 @@
 
 <div class="main_wrapper">
   {% if campaign.rich_content.value %}
-    <h1>{{ campaign.title }}</h1>
+    <h1 style="text-align: center">{{ campaign.title }}</h1>
     <div class="rich-cdp-content">
       {% for rich_slice in campaign.rich_content.value.slices.value %}
         <div class="rich-cdp-content__image-container">
