@@ -44,7 +44,7 @@
 
   <div class="products">
     {% for p in campaign.campaign_products.value %}
-      <a href="{{ p.handle }}">
+      <a href="{{ p.url }}">
         <div class="product">
           <div class="product_image_container">
             {{ p.featured_image | image_url: width: 400 | image_tag: height: 300, width: 400 }}
