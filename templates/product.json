@@ -22,6 +22,15 @@
             "text_style": "subtitle"
           }
         },
+        "d845ed63-6319-44d9-892b-30f3cbe5a7b1": {
+          "type": "shopify:\/\/apps\/eu-energy-label\/blocks\/energy-label\/f1268954-2d6c-4357-8f10-c90bed117a7c",
+          "settings": {
+            "size": "medium",
+            "alignment": "horizontal",
+            "horizontal-margin": 0,
+            "vertical-margin": 0
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -102,6 +111,7 @@
         "vendor",
         "title",
         "caption",
+        "d845ed63-6319-44d9-892b-30f3cbe5a7b1",
         "price",
         "variant_picker",
         "quantity_selector",
