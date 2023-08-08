@@ -2,6 +2,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
@@ -35,10 +36,72 @@
         "padding_bottom": 36,
         "club_only": true
       }
+    },
+    "fb87f740-0d89-41ee-ae7a-e7ff8d78ffd0": {
+      "type": "collection-list",
+      "blocks": {
+        "template--20431535571261__fb87f740-0d89-41ee-ae7a-e7ff8d78ffd0-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wohnzimmer-moebel"
+          }
+        },
+        "template--20431535571261__fb87f740-0d89-41ee-ae7a-e7ff8d78ffd0-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "esszimmer-moebel"
+          }
+        },
+        "template--20431535571261__fb87f740-0d89-41ee-ae7a-e7ff8d78ffd0-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "schlafzimmer-moebel"
+          }
+        },
+        "d790c1cc-ae6c-41b0-b629-5374f4c3b08c": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "moebel-flur-diele"
+          }
+        },
+        "dbd5c65c-d641-4123-b09c-b5a311380ba9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "arbeitszimmer"
+          }
+        },
+        "82f4331e-7435-47f4-aa57-0dd5f931a3a2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "badmoebel"
+          }
+        }
+      },
+      "block_order": [
+        "template--20431535571261__fb87f740-0d89-41ee-ae7a-e7ff8d78ffd0-featured_collection-1",
+        "template--20431535571261__fb87f740-0d89-41ee-ae7a-e7ff8d78ffd0-featured_collection-2",
+        "template--20431535571261__fb87f740-0d89-41ee-ae7a-e7ff8d78ffd0-featured_collection-3",
+        "d790c1cc-ae6c-41b0-b629-5374f4c3b08c",
+        "dbd5c65c-d641-4123-b09c-b5a311380ba9",
+        "82f4331e-7435-47f4-aa57-0dd5f931a3a2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "a8f5c8f9-299c-4a71-8cd0-95b124658c7d"
+    "a8f5c8f9-299c-4a71-8cd0-95b124658c7d",
+    "fb87f740-0d89-41ee-ae7a-e7ff8d78ffd0"
   ]
 }
