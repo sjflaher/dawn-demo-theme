@@ -188,17 +188,6 @@
     },
     "16929665183920099e": {
       "type": "apps",
-      "blocks": {
-        "b0e33227-e3a6-4f60-8468-edf2324c2625": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "disabled": true,
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "b0e33227-e3a6-4f60-8468-edf2324c2625"
-      ],
       "settings": {
         "include_margins": true
       }
