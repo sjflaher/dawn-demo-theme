@@ -1,5 +1,40 @@
 {
   "sections": {
+    "621195f4-ca1f-49f5-ba8b-51c45e189e3d": {
+      "type": "slideshow",
+      "blocks": {
+        "template--21365140488485__621195f4-ca1f-49f5-ba8b-51c45e189e3d-slide-1": {
+          "type": "slide",
+          "settings": {
+            "heading": "Dominate the Slopes",
+            "heading_size": "h1",
+            "subheading": "Experience the Thrill of Riding with Precision-Made Snowboards!",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--21365140488485__621195f4-ca1f-49f5-ba8b-51c45e189e3d-slide-1"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "ambient",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
     "f17ac7fd-66f1-4dfc-8be5-9e4ac8a8e4b6": {
       "type": "image-banner",
       "blocks": {
@@ -34,7 +69,9 @@
         "template--21365140488485__f17ac7fd-66f1-4dfc-8be5-9e4ac8a8e4b6-text-1",
         "template--21365140488485__f17ac7fd-66f1-4dfc-8be5-9e4ac8a8e4b6-buttons-1"
       ],
+      "disabled": true,
       "settings": {
+        "image": "shopify:\/\/shop_images\/person-skiing-down-the-snow-covered-mountain.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -77,6 +114,7 @@
     }
   },
   "order": [
+    "621195f4-ca1f-49f5-ba8b-51c45e189e3d",
     "f17ac7fd-66f1-4dfc-8be5-9e4ac8a8e4b6",
     "e0ee1a02-fa15-49ed-898a-14cc13e2d9e2"
   ]
