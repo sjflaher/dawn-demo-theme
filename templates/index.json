@@ -7,7 +7,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/image_1.png",
-            "heading": "Dominate the Slopes",
+            "heading": "THE GAME IS NEVER OVER",
             "heading_size": "h1",
             "subheading": "Experience the Thrill of Riding with Precision-Made Snowboards!",
             "button_label": "",
@@ -16,7 +16,7 @@
             "box_align": "bottom-right",
             "show_text_box": false,
             "text_alignment": "center",
-            "image_overlay_opacity": 40,
+            "image_overlay_opacity": 20,
             "color_scheme": "accent-2",
             "text_alignment_mobile": "center"
           }
