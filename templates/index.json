@@ -6,7 +6,7 @@
         "template--21365140488485__621195f4-ca1f-49f5-ba8b-51c45e189e3d-slide-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_1.png",
+            "image": "shopify:\/\/shop_images\/sjflaher_snowboarder_on_a_mountain_at_sunset_style_of_street_fi_29b4380d-e8a9-43e2-b8db-7b2cd52b4723.png",
             "heading": "THE GAME IS NEVER OVER",
             "heading_size": "h1",
             "subheading": "Experience the Thrill of Riding with Precision-Made Snowboards!",
@@ -16,7 +16,7 @@
             "box_align": "bottom-right",
             "show_text_box": false,
             "text_alignment": "center",
-            "image_overlay_opacity": 20,
+            "image_overlay_opacity": 10,
             "color_scheme": "accent-2",
             "text_alignment_mobile": "center"
           }
