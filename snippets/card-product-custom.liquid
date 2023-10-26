@@ -1,0 +1,96 @@
+{%- liquid
+    assign right_image = card_product.metafields.images.right
+    assign left_image = card_product.metafields.images.left
+    assign main_image = card_product.metafields.images.alpha
+    assign logo_image = card_product.metafields.images.logo
+    assign primary_color = card_product.metafields.custom.primary_color
+    assign secondary_color = card_product.metafields.custom.secondary_color
+    assign section_height = "400"
+-%}
+<div class="custom-card product-{{ card_product.handle }}">
+    <div class="custom-card__inner">
+        <div class="cc-grid content">
+            <div class="cc-grid logo">
+                <div class="image_container">
+                    <img
+                    srcset="
+                    {%- if logo_image.width >= 165 -%}{{ logo_image | image_url: width: 165 }} 165w,{%- endif -%}
+                    {%- if logo_image.width >= 360 -%}{{ logo_image | image_url: width: 360 }} 360w,{%- endif -%}
+                    {%- if logo_image.width >= 533 -%}{{ logo_image | image_url: width: 533 }} 533w,{%- endif -%}
+                    {%- if logo_image.width >= 720 -%}{{ logo_image | image_url: width: 720 }} 720w,{%- endif -%}
+                    {%- if logo_image.width >= 940 -%}{{ logo_image | image_url: width: 940 }} 940w,{%- endif -%}
+                    {%- if logo_image.width >= 1066 -%}{{ logo_image | image_url: width: 1066 }} 1066w,{%- endif -%}
+                    {{ logo_image | image_url }} {{ logo_image.width }}w
+                    "
+                    src="{{ logo_image | image_url: width: 533 }}"
+                    sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                    alt="{{ logo_image.alt | escape }}"
+                    class="motion-reduce"
+                    {% unless lazy_load == false %}
+                    loading="lazy"
+                    {% endunless %}
+                    width="auto"
+                    height="auto"
+                >
+                </div>
+            </div>
+            <div class="cc-grid details">
+                <div class="content__inner__price">
+                    {{ card_product.price | money }}
+                </div>
+                <a href="{{ card_product.url }}" class="nes-btn is-primary">See More</a>
+            </div>
+        </div>
+        <div class="cc-grid images">
+            <img
+            srcset="
+              {%- if right_image.width >= 165 -%}{{ right_image | image_url: width: 165 }} 165w,{%- endif -%}
+              {%- if right_image.width >= 360 -%}{{ right_image | image_url: width: 360 }} 360w,{%- endif -%}
+              {%- if right_image.width >= 533 -%}{{ right_image | image_url: width: 533 }} 533w,{%- endif -%}
+              {%- if right_image.width >= 720 -%}{{ right_image | image_url: width: 720 }} 720w,{%- endif -%}
+              {%- if right_image.width >= 940 -%}{{ right_image | image_url: width: 940 }} 940w,{%- endif -%}
+              {%- if right_image.width >= 1066 -%}{{ right_image | image_url: width: 1066 }} 1066w,{%- endif -%}
+              {{ right_image | image_url }} {{ right_image.width }}w
+            "
+            src="{{ right_image | image_url: width: 533 }}"
+            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+            alt="{{ right_image.alt | escape }}"
+            class="side-image right"
+            {% unless lazy_load == false %}
+              loading="lazy"
+            {% endunless %}
+            width="{{ secion_height |  divided_by: right_image.aspect_ratio }}"
+            height="{{ section_height }}"
+          >
+          <img
+          srcset="
+            {%- if left_image.width >= 165 -%}{{ left_image | image_url: width: 165 }} 165w,{%- endif -%}
+            {%- if left_image.width >= 360 -%}{{ left_image | image_url: width: 360 }} 360w,{%- endif -%}
+            {%- if left_image.width >= 533 -%}{{ left_image | image_url: width: 533 }} 533w,{%- endif -%}
+            {%- if left_image.width >= 720 -%}{{ left_image | image_url: width: 720 }} 720w,{%- endif -%}
+            {%- if left_image.width >= 940 -%}{{ left_image | image_url: width: 940 }} 940w,{%- endif -%}
+            {%- if left_image.width >= 1066 -%}{{ left_image | image_url: width: 1066 }} 1066w,{%- endif -%}
+            {{ left_image | image_url }} {{ left_image.width }}w
+          "
+          src="{{ left_image | image_url: width: 533 }}"
+          sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+          alt="{{ left_image.alt | escape }}"
+          class="side-image left"
+          {% unless lazy_load == false %}
+            loading="lazy"
+          {% endunless %}
+          width="{{ secion_height |  divided_by: left_image.aspect_ratio }}"
+          height="{{ section_height }}"
+        >
+        </div>
+    </div>
+</div>
+
+<style>
+    .custom-card.product-{{ card_product.handle }} .custom-card__inner {
+        background-color:{{ primary_color }}
+    }
+        .custom-card.product-{{ card_product.handle }} .content__inner__price {
+        color:{{ secondary_color }}
+    }
+</style>
