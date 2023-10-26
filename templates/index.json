@@ -103,7 +103,7 @@
         "show_view_all": false,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
-        "enable_custom_layout": false,
+        "enable_custom_layout": true,
         "color_scheme": "background-1",
         "image_ratio": "portrait",
         "image_shape": "parallelogram",
