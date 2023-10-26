@@ -567,6 +567,20 @@
       ]
     }
   </script>
+  <style>
+    body {
+      background: {{ product.metafields.custom.primary_color }} !important;
+    }
+    .shopify-payment-button__button, .quantity, fieldset.product-form__input label {
+        background-color: {{ product.metafields.custom.secondary_color }} !important;
+      }
+      p, li, .quantity__label, legend, .product__tax {
+        color: {{ product.metafields.custom.secondary_color }} !important;
+      }
+      .quantity__input *, fieldset.product-form__input label, .shopify-payment-button__button {
+        color: {{ product.metafields.custom.primary_color }} !important;
+      }
+  </style>
 </section>
 
 {% schema %}

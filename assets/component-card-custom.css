@@ -1,0 +1,117 @@
+slider-component#custom-layout{
+    padding: 0;
+    & ul.grid{
+        overflow: scroll;
+        row-gap: 0;
+
+    }
+    & li{
+        width: 100%;
+        max-width: unset;
+
+        &:not(:first-child) {
+            margin-top: -6.5rem;
+        }
+    }
+}
+ .custom-card__inner{
+    display: flex;
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+    transition: height .6s ease-out, clip-path .6s ease-out;
+    clip-path: polygon(0% 15%,100% 0%,100% 85%,0% 100%);
+    & img {
+        width: auto;
+        height: auto;    }
+ }
+
+ .cc-grid.logo{
+    width: 66%;
+ }
+ .cc-grid.details{
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
+ .cc-grid.content{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .6s ease-out;
+ }
+
+ .cc-grid.images {
+    width:40%
+}
+
+.cc-grid.images > img{
+    position: absolute;
+    width: max-content;
+    height: 200%;
+    transition: top .6s ease-out, left .6s ease-out, right .6s ease-out, transform .6s ease-out, height .6s ease-out;
+}
+
+.cc-grid.images > img:last-child{
+    left: 71%;
+    top: -12%;
+    transform: rotate(87deg);
+}
+
+.cc-grid.images > img:first-child{
+    left: 16%;
+    bottom: -12%;
+    transform: rotate(87deg);
+}
+
+.cc-grid.logo {
+    display: flex;
+    align-items: center;
+}
+
+.image_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cc-grid.main-image {
+    position: relative;
+    top: 100%;
+    transform: rotate(20deg);
+    transition: top 1.1s ease-out, transform .6s ease-in;
+}
+
+.custom-card:hover {
+    & .custom-card__inner {
+        height: 80vh;
+        clip-path: polygon(0% 9.5%,100% 0%,100% 90.5%,0% 100%);
+     }
+     & .cc-grid.content{
+        opacity: 1;
+     }
+    & .cc-grid.images > img:last-child{
+        left: 67%;
+        top: 8%;
+        transform: rotate(5deg);
+        height: 100%;
+    }
+
+    & .cc-grid.images > img:first-child{
+        left: 72%;
+        bottom: -5%;
+        transform: rotate(5deg);
+        height: 100%;
+    }
+ }
+
+ .content__inner__price {
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
